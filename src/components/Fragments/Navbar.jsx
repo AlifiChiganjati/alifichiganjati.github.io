@@ -8,7 +8,7 @@ import NavCarousel from "../Elements/Nav/NavCarousel";
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
   return (
-    <header className="p-4 flex justify-between items-center bg-red-500">
+    <header className="p-4 fixed w-full flex justify-between items-center bg-red-500">
       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase italic">
         Alifi Chiganjati
       </h1>

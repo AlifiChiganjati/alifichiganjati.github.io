@@ -10,10 +10,12 @@
   }
 }
 
-.navLink {
-  @apply hover:text-white  hover:ease-in-out hover:duration-500;
-}
+@layer utilities {
+  .active {
+    @apply relative text-white ease-in-out duration-500;
+  }
 
-.active {
-  @apply text-white ease-in-out duration-500;
+  .navLink {
+    @apply relative tracking-[1px] hover:text-white  hover:ease-in-out hover:duration-500 hover:after:w-full after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:content-[''] after:bg-black after:rounded-xl after:ease-in-out after:duration-500;
+  }
 }

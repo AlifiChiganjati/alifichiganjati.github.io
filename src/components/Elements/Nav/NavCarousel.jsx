@@ -2,13 +2,22 @@ import NavLinks from "./NavLinks";
 
 const NavCarousel = ({
   className = "hidden lg:flex justify-center items-center ",
+  variant,
 }) => {
   return (
     <ul className={className}>
-      <NavLinks to="hero">Home</NavLinks>
-      <NavLinks to="skill">Skill</NavLinks>
-      <NavLinks to="project">Project</NavLinks>
-      <NavLinks to="contact">Contact</NavLinks>
+      <NavLinks to="hero" variant={variant}>
+        Home
+      </NavLinks>
+      <NavLinks to="skill" variant={variant}>
+        Skill
+      </NavLinks>
+      <NavLinks to="project" variant={variant}>
+        Project
+      </NavLinks>
+      <NavLinks to="contact" variant={variant}>
+        Contact
+      </NavLinks>
     </ul>
   );
 };

@@ -8,7 +8,7 @@ import NavCarousel from "../Elements/Nav/NavCarousel";
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
   return (
-    <header className="p-4 fixed w-full flex justify-between items-center bg-red-500">
+    <header className="p-4 fixed w-full flex justify-between items-center bg-primary">
       <h1 className="text-xl md:text-2xl lg:text-3xl font-bold uppercase italic">
         Alifi Chiganjati
       </h1>
@@ -17,8 +17,8 @@ const Navbar = () => {
       <SideNav
         className={
           sideNav
-            ? "fixed lg:hidden top-0 right-0 w-full h-screen sm:w-[300px] bg-red-500 z-10 duration-500"
-            : "fixed lg:hidden top-0 right-[-100%] w-full h-screen sm:w-[300px] bg-red-500 z-10 duration-500"
+            ? "fixed lg:hidden top-0 right-0 w-full h-screen sm:w-[300px] bg-secondary z-10 duration-500"
+            : "fixed lg:hidden top-0 right-[-100%] w-full h-screen sm:w-[300px] bg-secondary z-10 duration-500"
         }
       >
         <MdOutlineClose

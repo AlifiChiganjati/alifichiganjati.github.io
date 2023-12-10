@@ -11,7 +11,7 @@ const NavLinks = ({ to, children }) => {
         smooth={true}
         offset={-80}
         duration={500}
-        className={`navLink  mx-4 cursor-pointer text-lg md:text-xl lg:text-2xl font-semibold`}
+        className="navLink  mx-4 cursor-pointer text-lg md:text-xl lg:text-2xl font-semibold"
       >
         {children}
       </Link>

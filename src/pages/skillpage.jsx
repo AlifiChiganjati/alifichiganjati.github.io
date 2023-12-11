@@ -1,9 +1,6 @@
 const SkillPage = () => {
   return (
-    <section
-      id="skill"
-      className="flex justify-center items-center h-screen w-full"
-    >
+    <section id="skill" className="flex  justify-center items-center w-full">
       SkillPage
     </section>
   );

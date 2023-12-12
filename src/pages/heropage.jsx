@@ -14,7 +14,7 @@ const HeroPage = () => {
   return (
     <section
       id="hero"
-      className="flex flex-col md:flex-row justify-center items-center h-screen w-full"
+      className="flex flex-col bg-text-primary pt-24 md:pt-0 md:flex-row justify-center items-center h-screen w-full"
     >
       <HeroText
         dataAos="fade-right"

@@ -1,6 +1,11 @@
 import { Link } from "react-scroll";
 
-const NavLinks = ({ to, children, variant = "after:bg-secondary" }) => {
+const NavLinks = ({
+  to,
+  children,
+  onClick,
+  variant = "after:bg-secondary",
+}) => {
   return (
     <li>
       <Link
@@ -10,6 +15,7 @@ const NavLinks = ({ to, children, variant = "after:bg-secondary" }) => {
         smooth={true}
         offset={-80}
         duration={500}
+        onClick={onClick}
         className="navLink  mx-4 cursor-pointer text-light text-lg md:text-xl lg:text-2xl font-semibold"
       >
         {children}

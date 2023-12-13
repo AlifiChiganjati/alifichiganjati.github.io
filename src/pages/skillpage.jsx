@@ -1,6 +1,6 @@
-import html from "../assets/Image/hmtl5.svg";
-import css from "../assets/Image/css.svg";
-import js from "../assets/Image/js.svg";
+import html from "../assets/Image/html-5.png";
+import css from "../assets/Image/css-3.png";
+import js from "../assets/Image/js.png";
 import react from "../assets/Image/react.svg";
 import tailwind from "../assets/Image/tailwindcss.svg";
 
@@ -18,7 +18,7 @@ const SkillPage = () => {
           <li className="w-16 h-16 m-2">
             <img src={html} alt="html" />
           </li>
-          <li className="w-12 h-12 m-2">
+          <li className="w-16 h-16 m-2">
             <img src={css} alt="html" />
           </li>
           <li className="w-16 h-16 m-2">

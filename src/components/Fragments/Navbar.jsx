@@ -26,10 +26,11 @@ const Navbar = () => {
           onClick={() => setSideNav(!sideNav)}
           className="cursor-pointer absolute top-4 right-4 text-dark-primary"
         />
-        <h1 className="p-4 text-xl text-dark-primary text-shadow sm:hidden font-bold uppercase italic">
+        <h1 className="p-4 text-xl text-text-primary text-shadow sm:hidden font-bold uppercase italic">
           Alifi Chiganjati
         </h1>
         <NavCarousel
+          onClick={() => setSideNav(!sideNav)}
           variant="after:bg-text-primary  text-dark-secondary"
           className="flex flex-col px-2 py-4 gap-2 text-xl sm:text-2xl"
         />

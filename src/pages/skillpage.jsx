@@ -8,7 +8,7 @@ const SkillPage = () => {
   return (
     <section
       id="skill"
-      className="flex bg-text-primary flex-col justify-center items-center w-full"
+      className="flex  bg-text-primary flex-col justify-center items-center w-full"
     >
       <h3 className="text-2xl md:text-4xl mt-5 lg:text-5xl text-primary uppercase text-shadow font-bold">
         My Skill

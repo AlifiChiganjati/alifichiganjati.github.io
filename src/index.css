@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,11 +11,7 @@
 }
 
 @layer utilities {
-  .active {
-    @apply relative text-white ease-in-out duration-500;
-  }
-
   .navLink {
-    @apply relative tracking-[1px] hover:text-white  hover:ease-in-out hover:duration-500 hover:after:w-full after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:content-[''] after:bg-black after:rounded-xl after:ease-in-out after:duration-500;
+    @apply relative tracking-[1px] hover:text-text-primary  hover:ease-in-out hover:duration-500 hover:after:w-full after:absolute after:-bottom-2 after:left-0 after:w-0 after:h-1 after:content-[''] after:bg-secondary after:rounded-xl after:ease-in-out after:duration-500;
   }
 }

@@ -1,11 +1,10 @@
 import { Link } from "react-scroll";
 
-const NavLinks = ({ to, children }) => {
+const NavLinks = ({ to, children, variant = "after:bg-secondary" }) => {
   return (
     <li>
       <Link
-        activeClass="relative text-white ease-in-out duration-500 after:absolute after:-bottom-2 after:left-0 after:w-full after:h-1 after:content-[''] after:bg-black after:rounded-xl;
-"
+        activeClass={`relative text-text-primary ease-in-out duration-500 after:absolute after:-bottom-2 ${variant} after:left-0 after:w-full after:h-1 after:content-['']  after:rounded-xl`}
         to={to}
         spy={true}
         smooth={true}

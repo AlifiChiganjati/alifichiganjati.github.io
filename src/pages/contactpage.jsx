@@ -10,7 +10,7 @@ const ContactPage = () => {
       className="flex flex-col bg-text-primary justify-center items-center  w-full px-2"
     >
       <h3 className="text-2xl md:text-4xl mb-5 mt-10 lg:text-5xl text-primary uppercase text-shadow font-bold">
-        Contact Me If You Can
+        Contact Me{" "}
       </h3>
       <div className="w-full flex flex-col items-center md:items-start justify-center md:flex-row">
         <div className="md:w-1/2 md:mr-2 p-2">
@@ -70,7 +70,7 @@ const ContactPage = () => {
         </div>
         <div className="md:w-1/2 md:ml-2">
           <h4 className="text-center text-shadow font-semibold text-2xl md:text-3xl lg:text-4xl  text-primary">
-            Touch Me
+            Touch Me If You Can
           </h4>
           <ul className="flex flex-col">
             <li className="my-2">

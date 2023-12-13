@@ -2,6 +2,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import Footer from "../components/Fragments/Footter";
 const ContactPage = () => {
   return (
     <section
@@ -114,6 +115,7 @@ const ContactPage = () => {
           </ul>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

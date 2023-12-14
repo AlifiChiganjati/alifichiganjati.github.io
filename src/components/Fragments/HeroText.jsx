@@ -29,10 +29,11 @@ const HeroText = ({
       </h2>
 
       <p className="mt-2 text-justify text-base font-light text-dark-primary dark:text-dark-text-primary md:text-xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quibusdam
-        minus possimus enim nobis unde earum, aut dolore adipisci ducimus
-        recusandae magnam esse facere corrupti aliquam sapiente eligendi!
-        Assumenda, eius?
+        I specialize in building responsive and user-friendly Interfaces. I'm
+        committed to employing the lastest technologies to elevate web
+        development projects. As a coder, I'm always looking for new challenges
+        and opportunities to grow my skills. I'm excited to work with you and
+        help you build your next great project. let's build something great!
       </p>
     </div>
   );

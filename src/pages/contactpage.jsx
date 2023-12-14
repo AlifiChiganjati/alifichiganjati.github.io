@@ -33,7 +33,7 @@ const ContactPage = () => {
       <div className="flex w-full flex-col items-center justify-center md:flex-row md:items-start">
         <div
           data-aos="fade-right"
-          data-aos-offset="50"
+          data-aos-offset="-50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
@@ -100,7 +100,7 @@ const ContactPage = () => {
           data-aos="fade-left"
           data-aos-offset="100"
           data-aos-delay="300"
-          data-aos-duration="1200"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="true"

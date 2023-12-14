@@ -20,7 +20,7 @@ const ContactPage = () => {
     >
       <h3
         data-aos="fade-up"
-        data-aos-offset="75"
+        data-aos-offset="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
@@ -33,6 +33,7 @@ const ContactPage = () => {
       <div className="flex w-full flex-col items-center justify-center md:flex-row md:items-start">
         <div
           data-aos="fade-right"
+          data-aos-offset="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
@@ -97,7 +98,7 @@ const ContactPage = () => {
         </div>
         <div
           data-aos="fade-left"
-          data-aos-offset="50"
+          data-aos-offset="75"
           data-aos-duration="1200"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"

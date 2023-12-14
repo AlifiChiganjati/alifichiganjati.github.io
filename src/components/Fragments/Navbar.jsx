@@ -8,8 +8,8 @@ import NavCarousel from "../Elements/Nav/NavCarousel";
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
   return (
-    <header className="fixed z-10 flex w-full min-w-[340px] items-center justify-between bg-primary p-4">
-      <h1 className="text-shadow-sm text-xl font-bold uppercase italic text-text-primary md:text-2xl lg:text-3xl">
+    <header className="fixed z-10 flex w-full min-w-[340px] items-center justify-between bg-primary p-4 dark:bg-dark-primary">
+      <h1 className="text-shadow-sm text-xl font-bold uppercase italic text-text-primary dark:text-dark-light md:text-2xl lg:text-3xl">
         Alifi Chiganjati
       </h1>
       <Nav onClick={() => setSideNav(!sideNav)} />
@@ -17,7 +17,7 @@ const Navbar = () => {
       <SideNav
         className={
           sideNav
-            ? "fixed right-0 top-0 z-10 h-screen w-full bg-secondary duration-500 sm:w-[300px] lg:hidden"
+            ? "fixed right-0 top-0 z-10 h-screen w-full bg-secondary duration-500 dark:bg-dark-secondary sm:w-[300px] lg:hidden"
             : "fixed right-[-100%] top-0 z-10 h-screen w-full bg-secondary duration-500 sm:w-[300px] lg:hidden"
         }
       >

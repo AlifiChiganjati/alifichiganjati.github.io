@@ -7,7 +7,7 @@ const NavMobile = ({ onClick }) => {
         <AiOutlineMenu
           size={30}
           onClick={onClick}
-          className="cursor-pointer text-text-primary"
+          className="cursor-pointer text-text-primary dark:text-dark-text-primary"
         />
       </li>
     </ul>

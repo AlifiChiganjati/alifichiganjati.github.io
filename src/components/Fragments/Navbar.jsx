@@ -18,15 +18,15 @@ const Navbar = () => {
         className={
           sideNav
             ? "fixed right-0 top-0 z-10 h-screen w-full bg-secondary duration-500 dark:bg-dark-secondary sm:w-[300px] lg:hidden"
-            : "fixed right-[-100%] top-0 z-10 h-screen w-full bg-secondary duration-500 sm:w-[300px] lg:hidden"
+            : "fixed right-[-100%] top-0 z-10 h-screen w-full bg-secondary duration-500 dark:bg-dark-secondary sm:w-[300px] lg:hidden"
         }
       >
         <MdOutlineClose
           size={30}
           onClick={() => setSideNav(!sideNav)}
-          className="absolute right-4 top-4 cursor-pointer text-dark-primary"
+          className="absolute right-4 top-4 cursor-pointer text-dark-primary dark:text-dark-light lg:text-dark-secondary"
         />
-        <h1 className="text-shadow p-4 text-xl font-bold uppercase italic text-text-primary sm:hidden">
+        <h1 className="text-shadow p-4 text-xl font-bold uppercase italic text-text-primary dark:text-dark-light sm:hidden">
           Alifi Chiganjati
         </h1>
         <NavCarousel

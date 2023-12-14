@@ -10,7 +10,7 @@ const ContactPage = () => {
       className="flex flex-col bg-text-primary justify-center items-center  w-full px-2"
     >
       <h3 className="text-2xl md:text-4xl mb-5 mt-10 lg:text-5xl text-primary uppercase text-shadow font-bold">
-        Contact Me{" "}
+        Contact Me
       </h3>
       <div className="w-full flex flex-col items-center md:items-start justify-center md:flex-row">
         <div className="md:w-1/2 md:mr-2 p-2">

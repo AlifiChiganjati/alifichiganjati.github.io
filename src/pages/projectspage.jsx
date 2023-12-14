@@ -17,7 +17,7 @@ const ProjectPage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim
             perferendis quis ad ut laudantium odio unde,
           </p>
-        </div>{" "}
+        </div>
         <div className="w-[300px] h-auto shadow flex flex-col justify-center items-center gap-5 border border-primary">
           <div className="">
             <img src="https://placehold.co/300x300" alt="Image of project" />
@@ -27,7 +27,7 @@ const ProjectPage = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim
             perferendis quis ad ut laudantium odio unde,
           </p>
-        </div>{" "}
+        </div>
         <div className="w-[300px] h-auto shadow flex flex-col justify-center items-center gap-5 border border-primary">
           <div className="">
             <img src="https://placehold.co/300x300" alt="Image of project" />

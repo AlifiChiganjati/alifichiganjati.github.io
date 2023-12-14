@@ -98,7 +98,6 @@ const ContactPage = () => {
         <div
           data-aos="fade-left"
           data-aos-offset="50"
-          data-aos-delay="100"
           data-aos-duration="1200"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"

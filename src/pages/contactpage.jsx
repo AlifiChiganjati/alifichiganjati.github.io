@@ -3,17 +3,44 @@ import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter, FaGithub } from "react-icons/fa6";
 import Footer from "../components/Fragments/Footter";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const ContactPage = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <section
       id="contact"
       className="flex w-full flex-col items-center justify-center  bg-text-primary px-2 duration-150 dark:bg-dark-secondary dark:text-dark-text-primary"
     >
-      <h3 className="text-shadow mb-5 mt-10 text-2xl font-bold uppercase text-primary dark:text-dark-light md:text-4xl lg:text-5xl">
+      <h3
+        data-aos="fade-up"
+        data-aos-offset="-200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="true"
+        data-aos-anchor-placement="top-center"
+        className="text-shadow mb-5 mt-10 text-2xl font-bold uppercase text-primary dark:text-dark-light md:text-4xl lg:text-5xl"
+      >
         Contact Me
       </h3>
       <div className="flex w-full flex-col items-center justify-center md:flex-row md:items-start">
-        <div className="p-2 md:mr-2 md:w-1/2">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          className="p-2 md:mr-2 md:w-1/2"
+        >
           <form
             onSubmit={(e) => e.preventDefault()}
             className="flex flex-col items-center gap-4"
@@ -69,7 +96,15 @@ const ContactPage = () => {
             </div>
           </form>
         </div>
-        <div className="md:ml-2 md:w-1/2">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="true"
+          data-aos-anchor-placement="top-center"
+          className="md:ml-2 md:w-1/2"
+        >
           <h4 className="text-shadow text-center text-2xl font-semibold text-primary dark:text-dark-light  md:text-3xl lg:text-4xl">
             Touch Me If You Can
           </h4>

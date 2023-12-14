@@ -1,15 +1,5 @@
-import { useState } from "react";
-import { useEffect } from "react";
-
 const DarkMode = () => {
-  const [theme, setTheme] = useState("dark");
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-    const localTheme = localStorage.getItem("theme");
-    document.querySelector("html").setAttribute("data-theme", localTheme);
-  }, [theme]);
-
-  const handleToggle = (e) => {
+  const handleToggle = () => {
     document.querySelector("html").classList.toggle("dark");
   };
 

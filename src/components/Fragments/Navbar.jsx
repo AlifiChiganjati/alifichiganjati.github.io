@@ -8,8 +8,8 @@ import NavCarousel from "../Elements/Nav/NavCarousel";
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
   return (
-    <header className="p-4 fixed w-full min-w-[340px] flex justify-between items-center bg-primary z-10">
-      <h1 className="text-xl text-text-primary md:text-2xl lg:text-3xl font-bold uppercase italic text-shadow-sm">
+    <header className="fixed z-10 flex w-full min-w-[340px] items-center justify-between bg-primary p-4">
+      <h1 className="text-shadow-sm text-xl font-bold uppercase italic text-text-primary md:text-2xl lg:text-3xl">
         Alifi Chiganjati
       </h1>
       <Nav onClick={() => setSideNav(!sideNav)} />
@@ -17,22 +17,22 @@ const Navbar = () => {
       <SideNav
         className={
           sideNav
-            ? "fixed lg:hidden top-0 right-0 w-full h-screen sm:w-[300px] bg-secondary z-10 duration-500"
-            : "fixed lg:hidden top-0 right-[-100%] w-full h-screen sm:w-[300px] bg-secondary z-10 duration-500"
+            ? "fixed right-0 top-0 z-10 h-screen w-full bg-secondary duration-500 sm:w-[300px] lg:hidden"
+            : "fixed right-[-100%] top-0 z-10 h-screen w-full bg-secondary duration-500 sm:w-[300px] lg:hidden"
         }
       >
         <MdOutlineClose
           size={30}
           onClick={() => setSideNav(!sideNav)}
-          className="cursor-pointer absolute top-4 right-4 text-dark-primary"
+          className="absolute right-4 top-4 cursor-pointer text-dark-primary"
         />
-        <h1 className="p-4 text-xl text-text-primary text-shadow sm:hidden font-bold uppercase italic">
+        <h1 className="text-shadow p-4 text-xl font-bold uppercase italic text-text-primary sm:hidden">
           Alifi Chiganjati
         </h1>
         <NavCarousel
           onClick={() => setSideNav(!sideNav)}
           variant="after:bg-text-primary  text-dark-secondary"
-          className="flex flex-col px-2 py-4 gap-2 text-xl sm:text-2xl"
+          className="flex flex-col gap-2 px-2 py-4 text-xl sm:text-2xl"
         />
       </SideNav>
     </header>

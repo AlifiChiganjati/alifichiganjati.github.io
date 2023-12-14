@@ -8,26 +8,26 @@ const SkillPage = () => {
   return (
     <section
       id="skill"
-      className="flex  bg-text-primary flex-col justify-center items-center w-full"
+      className="flex  w-full flex-col items-center justify-center bg-text-primary"
     >
-      <h3 className="text-2xl md:text-4xl mt-5 lg:text-5xl text-primary uppercase text-shadow font-bold">
+      <h3 className="text-shadow mt-5 text-2xl font-bold uppercase text-primary md:text-4xl lg:text-5xl">
         My Skill
       </h3>
-      <div className="flex w-[400px] md:w-[500px] lg:w-[800px] bg-secondary p-5 rounded border-black border mt-5">
-        <ul className=" grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-items-center place-content-between w-full gap-5">
-          <li className="w-16 h-16 m-2">
+      <div className="mt-5 flex w-[400px] rounded border border-black bg-secondary p-5 md:w-[500px] lg:w-[800px]">
+        <ul className=" grid  w-full grid-cols-2 place-content-between place-items-center gap-5 md:grid-cols-3 lg:grid-cols-5">
+          <li className="m-2 h-16 w-16">
             <img src={html} alt="html" />
           </li>
-          <li className="w-16 h-16 m-2">
+          <li className="m-2 h-16 w-16">
             <img src={css} alt="html" />
           </li>
-          <li className="w-16 h-16 m-2">
+          <li className="m-2 h-16 w-16">
             <img src={js} alt="html" />
           </li>
-          <li className="w-16 h-16 m-2">
+          <li className="m-2 h-16 w-16">
             <img src={tailwind} alt="html" />
           </li>
-          <li className="w-16 h-16 m-2">
+          <li className="m-2 h-16 w-16">
             <img src={react} alt="html" />
           </li>
         </ul>

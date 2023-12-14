@@ -11,10 +11,10 @@ const HeroImage = ({
       data-aos-duration={dataAosDuration}
       data-aos-easing={dataAosEasing}
       data-aos-delay={dataAosDelay}
-      className="flex justify-center items-center h-full lg:relative  md:w-1/2"
+      className="flex h-full items-center justify-center md:w-1/2  lg:relative"
     >
-      <div className="w-[300px] h-[400px] lg:absolute lg:bottom-0 md:w-[400px] md:h-[500px] ">
-        <img src={src} alt="Hero Image" className="bg-cover w-full h-full" />
+      <div className="h-[400px] w-[300px] md:h-[500px] md:w-[400px] lg:absolute lg:bottom-0 ">
+        <img src={src} alt="Hero Image" className="h-full w-full bg-cover" />
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className=" text-lg text-center md:text-xl my-4">
+    <footer className=" my-4 text-center text-lg md:text-xl">
       <span className="font-bold">
         &copy;
         {new Date().getFullYear()}{" "}

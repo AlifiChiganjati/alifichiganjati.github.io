@@ -2,37 +2,37 @@ const ProjectPage = () => {
   return (
     <section
       id="project"
-      className="flex flex-col justify-center items-center pt-10 bg-text-primary w-full"
+      className="flex w-full flex-col items-center justify-center bg-text-primary pt-10"
     >
-      <h3 className="text-2xl md:text-4xl mt-5 lg:text-5xl text-primary uppercase text-shadow font-bold">
+      <h3 className="text-shadow mt-5 text-2xl font-bold uppercase text-primary md:text-4xl lg:text-5xl">
         my project
       </h3>
-      <div className="flex flex-wrap justify-center items-center gap-5 mt-5">
-        <div className="w-[300px] h-auto shadow flex flex-col justify-center items-center gap-5 border border-primary">
+      <div className="mt-5 flex flex-wrap items-center justify-center gap-5">
+        <div className="flex h-auto w-[300px] flex-col items-center justify-center gap-5 border border-primary shadow">
           <div className="">
             <img src="https://placehold.co/300x300" alt="Image of project" />
           </div>
-          <h4 className="text-3xl p-2">Title of Project</h4>
+          <h4 className="p-2 text-3xl">Title of Project</h4>
           <p className="p-2 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim
             perferendis quis ad ut laudantium odio unde,
           </p>
         </div>
-        <div className="w-[300px] h-auto shadow flex flex-col justify-center items-center gap-5 border border-primary">
+        <div className="flex h-auto w-[300px] flex-col items-center justify-center gap-5 border border-primary shadow">
           <div className="">
             <img src="https://placehold.co/300x300" alt="Image of project" />
           </div>
-          <h4 className="text-3xl p-2">Title of Project</h4>
+          <h4 className="p-2 text-3xl">Title of Project</h4>
           <p className="p-2 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim
             perferendis quis ad ut laudantium odio unde,
           </p>
         </div>
-        <div className="w-[300px] h-auto shadow flex flex-col justify-center items-center gap-5 border border-primary">
+        <div className="flex h-auto w-[300px] flex-col items-center justify-center gap-5 border border-primary shadow">
           <div className="">
             <img src="https://placehold.co/300x300" alt="Image of project" />
           </div>
-          <h4 className="text-3xl p-2">Title of Project</h4>
+          <h4 className="p-2 text-3xl">Title of Project</h4>
           <p className="p-2 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe enim
             perferendis quis ad ut laudantium odio unde,

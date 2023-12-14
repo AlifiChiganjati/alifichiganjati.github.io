@@ -1,7 +1,7 @@
 import { MdOutlineEmail } from "react-icons/md";
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter, FaGithub } from "react-icons/fa6";
 import Footer from "../components/Fragments/Footter";
 const ContactPage = () => {
   return (
@@ -90,6 +90,18 @@ const ContactPage = () => {
                 <span>Alifi Chiganjati</span>
               </a>
             </li>
+            <li className="my-2">
+              <a
+                href="https://github.com/AlifiChiganjati"
+                target="_blank"
+                className="flex items-center gap-2"
+                rel="noreferrer"
+              >
+                <FaGithub size={30} className="text-primary " />
+                <span>AlifiChiganjati</span>
+              </a>
+            </li>
+
             <li className="my-2">
               <a
                 href="https://www.instagram.com/alifi_chiganjati/"

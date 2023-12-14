@@ -28,7 +28,7 @@ const ProjectPage = () => {
       </h3>
       <div
         data-aos="fade-down"
-        data-aos-offset="-250"
+        data-aos-offset="-300"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"

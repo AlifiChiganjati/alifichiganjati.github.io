@@ -4,7 +4,7 @@ import NavMobile from "./NavMobile";
 
 const Nav = ({ onClick }) => {
   return (
-    <nav className="flex items-center justify-between ">
+    <nav className="flex items-center justify-between">
       <DarkMode />
       <NavCarousel />
       <NavMobile onClick={onClick} />

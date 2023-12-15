@@ -1,4 +1,4 @@
-import DarkMode from "../../DarkMode";
+import DarkMode from "../DarkMode";
 import NavCarousel from "./NavCarousel";
 import NavMobile from "./NavMobile";
 

@@ -8,7 +8,7 @@ import NavCarousel from "../Elements/Nav/NavCarousel";
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
   return (
-    <header className="fixed left-0 top-0 z-10 flex w-full items-center justify-between bg-primary p-4 dark:bg-dark-primary">
+    <header className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-primary p-4 dark:bg-dark-primary">
       <h1 className="text-shadow-sm text-xl font-bold uppercase italic text-text-primary dark:text-dark-light md:text-2xl lg:text-3xl">
         Alifi Chiganjati
       </h1>

@@ -5,6 +5,7 @@ const NavLinks = ({
   children,
   onClick,
   variant = "after:bg-secondary dark:after:bg-dark-text-primary",
+  offset = 0,
 }) => {
   return (
     <li>
@@ -13,7 +14,7 @@ const NavLinks = ({
         to={to}
         spy={true}
         smooth={true}
-        offset={0}
+        offset={offset}
         duration={1000}
         onClick={onClick}
         className="navLink  mx-6 cursor-pointer text-lg font-semibold text-text-primary dark:text-dark-text-primary md:text-xl lg:text-2xl"

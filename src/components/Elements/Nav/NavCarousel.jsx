@@ -16,7 +16,7 @@ const NavCarousel = ({
       <NavLinks onClick={onClick} to="project" variant={variant}>
         Project
       </NavLinks>
-      <NavLinks onClick={onClick} to="contact" variant={variant}>
+      <NavLinks onClick={onClick} offset={10} to="contact" variant={variant}>
         Contact
       </NavLinks>
     </ul>

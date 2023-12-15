@@ -22,7 +22,7 @@ const ProjectPage = () => {
         data-aos-mirror="true"
         data-aos-once="true"
         data-aos-anchor-placement="top-center"
-        className="text-shadow mb-5 mt-10 text-2xl font-bold uppercase text-primary dark:text-light md:text-4xl lg:text-5xl"
+        className="text-shadow mb-5  pt-20 text-2xl font-bold uppercase text-primary dark:text-light md:text-4xl lg:text-5xl"
       >
         my project
       </h3>

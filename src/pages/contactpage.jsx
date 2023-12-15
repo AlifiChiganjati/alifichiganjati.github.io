@@ -33,13 +33,13 @@ const ContactPage = () => {
       <div className="flex w-full flex-col items-center justify-center md:flex-row md:items-start">
         <div
           data-aos="fade-right"
-          data-aos-offset="-50"
+          data-aos-offset="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="true"
           data-aos-anchor-placement="top-center"
-          className="p-2 md:mr-2 md:w-1/2"
+          className="w-full p-2 md:mr-2 md:w-1/2"
         >
           <form
             onSubmit={(e) => e.preventDefault()}
@@ -96,10 +96,11 @@ const ContactPage = () => {
             </div>
           </form>
         </div>
-        <div className="md:ml-2 md:w-1/2">
+        <div className="w-full md:ml-2 md:w-1/2">
           <div
             data-aos="fade-left"
-            data-aos-offset="75"
+            data-aos-delay="500"
+            data-aos-offset="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
@@ -177,7 +178,14 @@ const ContactPage = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="true"
+          >
             <p className="mt-5  px-2 text-justify text-base font-light text-dark-primary dark:text-dark-light md:pr-4 md:text-xl">
               Don't be Shy, to get in touch with me if you have any projects or
               opportunities. I'm open to collaboration and eager to discuss how

@@ -9,7 +9,7 @@ const NavLinks = ({
   return (
     <li>
       <Link
-        activeClass={`relative text-dark-light lg:text-text-primary ease-in-out duration-500 after:absolute after:-bottom-2 ${variant} after:left-0 after:w-full after:h-1 after:content-['']  after:rounded-xl dark:text-light`}
+        activeClass={`relative text-dark-light lg:text-light ease-in-out duration-500 after:absolute after:-bottom-2 ${variant} after:left-0 after:w-full after:h-1 after:content-['']  after:rounded-xl dark:text-light`}
         to={to}
         spy={true}
         smooth={true}

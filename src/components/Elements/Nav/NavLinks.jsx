@@ -13,10 +13,10 @@ const NavLinks = ({
         to={to}
         spy={true}
         smooth={true}
-        offset={-20}
+        offset={-25}
         duration={1000}
         onClick={onClick}
-        className="navLink  mx-4 cursor-pointer text-lg font-semibold text-text-primary dark:text-dark-text-primary md:text-xl lg:text-2xl"
+        className="navLink  mx-6 cursor-pointer text-lg font-semibold text-text-primary dark:text-dark-text-primary md:text-xl lg:text-2xl"
       >
         {children}
       </Link>

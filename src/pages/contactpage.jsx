@@ -99,12 +99,10 @@ const ContactPage = () => {
         <div
           data-aos="fade-left"
           data-aos-offset="75"
-          data-aos-delay="300"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="true"
-          data-aos-anchor-placement="top-center"
           className="md:ml-2 md:w-1/2"
         >
           <h4 className="text-shadow text-center text-2xl font-semibold text-primary dark:text-dark-light  md:text-3xl lg:text-4xl">

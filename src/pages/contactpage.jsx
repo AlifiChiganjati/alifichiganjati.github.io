@@ -105,7 +105,6 @@ const ContactPage = () => {
             data-aos-mirror="true"
             data-aos-once="true"
           >
-            {" "}
             <h4 className="text-shadow text-center text-2xl font-semibold text-primary dark:text-dark-light  md:text-3xl lg:text-4xl">
               Touch Me If You Can
             </h4>
@@ -183,7 +182,6 @@ const ContactPage = () => {
             data-aos-offset="75"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
             data-aos-once="true"
           >
             <p className="mt-5  px-2 text-justify text-base font-light text-dark-primary dark:text-dark-light md:pr-4 md:text-xl">

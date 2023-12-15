@@ -178,23 +178,23 @@ const ContactPage = () => {
               </li>
             </ul>
           </div>
-
-          <p
+          <div
             data-aos="fade-up"
             data-aos-offset="75"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="true"
-            className="mt-5  px-2 text-justify text-base font-light text-dark-primary dark:text-dark-light md:pr-4 md:text-xl"
           >
-            Don't be Shy, to get in touch with me if you have any projects or
-            opportunities. I'm open to collaboration and eager to discuss how my
-            skills and experience can contribute to your success. Whether it's a
-            one-time project or an ongoing partnership, I'm here to explore and
-            create value together. you can contact me via email or social media,
-            and I'll reply ASAP.
-          </p>
+            <p className="mt-5  px-2 text-justify text-base font-light text-dark-primary dark:text-dark-light md:pr-4 md:text-xl">
+              Don't be Shy, to get in touch with me if you have any projects or
+              opportunities. I'm open to collaboration and eager to discuss how
+              my skills and experience can contribute to your success. Whether
+              it's a one-time project or an ongoing partnership, I'm here to
+              explore and create value together. you can contact me via email or
+              social media, and I'll reply ASAP.
+            </p>
+          </div>
         </div>
       </div>
       <Footer />

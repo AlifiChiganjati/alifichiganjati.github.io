@@ -39,12 +39,11 @@ const ContactPage = () => {
           dataAosEasing="ease-in-out"
           dataAosMirror="true"
           dataAosOnce="true"
-          dataAosAnchorPlacement="top-center"
         />
         <div
           data-aos="fade-left"
           data-aos-delay="500"
-          data-aos-offset="-100"
+          data-aos-offset="100"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"

@@ -103,7 +103,7 @@ const ContactPage = () => {
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="true"
-          className="md:ml-2 md:w-1/2"
+          className="relative md:ml-2 md:w-1/2"
         >
           <h4 className="text-shadow text-center text-2xl font-semibold text-primary dark:text-dark-light  md:text-3xl lg:text-4xl">
             Touch Me If You Can
@@ -176,7 +176,7 @@ const ContactPage = () => {
               </a>
             </li>
           </ul>
-          <p className="mt-5 px-2 text-justify text-base font-light text-dark-primary dark:text-dark-light md:pr-4 md:text-xl">
+          <p className="absolute mt-5 px-2 text-justify text-base font-light text-dark-primary dark:text-dark-light md:pr-4 md:text-xl">
             Don't be Shy, to get in touch with me if you have any projects or
             opportunities. I'm open to collaboration and eager to discuss how my
             skills and experience can contribute to your success. Whether it's a

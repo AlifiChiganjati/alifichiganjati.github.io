@@ -44,9 +44,6 @@ const ContactPage = () => {
         <InputForm />
         <div className="md:ml-2 md:w-1/2">
           <div>
-            <h4 className="text-shadow text-center text-2xl font-semibold text-primary dark:text-dark-light  md:text-3xl lg:text-4xl">
-              Touch Me If You Can
-            </h4>
             <ul className="inline-block">
               <li className="my-4">
                 <a className="flex items-center gap-2">

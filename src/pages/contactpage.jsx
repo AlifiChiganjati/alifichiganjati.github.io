@@ -114,7 +114,7 @@ const ContactPage = () => {
             </ul>
           </div>
 
-          <p className="mt-5  inline-block px-2 text-justify text-base font-light text-dark-primary dark:text-dark-light md:pr-4 md:text-xl">
+          <p className="mt-5  inline-block px-2  text-base text-dark-primary dark:text-dark-light md:pr-4 md:text-xl">
             Don't be Shy, to get in touch with me if you have any projects or
             opportunities. I'm open to collaboration and eager to discuss how my
             skills and experience can contribute to your success. Whether it's a

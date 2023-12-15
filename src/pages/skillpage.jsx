@@ -16,7 +16,7 @@ const SkillPage = () => {
   return (
     <section
       id="skill"
-      className="flex  w-full flex-col items-center justify-center bg-text-primary dark:bg-dark-secondary"
+      className="flex   w-full flex-col items-center justify-center bg-text-primary dark:bg-dark-secondary"
     >
       <h3
         data-aos="fade-up"
@@ -26,7 +26,7 @@ const SkillPage = () => {
         data-aos-mirror="true"
         data-aos-once="true"
         data-aos-anchor-placement="top-center"
-        className="text-shadow mt-5 text-2xl font-bold uppercase text-primary dark:text-dark-light md:text-4xl lg:text-5xl"
+        className="text-shadow mb-5 mt-10 text-2xl font-bold uppercase text-primary dark:text-dark-light md:text-4xl lg:text-5xl"
       >
         My Skill
       </h3>

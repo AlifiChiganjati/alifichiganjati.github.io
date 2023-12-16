@@ -17,7 +17,7 @@ const ContactPage = () => {
   return (
     <section
       id="contact"
-      className="flex w-full flex-col items-center justify-center  bg-text-primary px-2 duration-150 dark:bg-dark-secondary dark:text-dark-text-primary"
+      className="flex w-full flex-col items-center justify-center  bg-text-primary px-2 pt-5 duration-150 dark:bg-dark-secondary dark:text-dark-text-primary"
     >
       <h3
         data-aos="fade-up"

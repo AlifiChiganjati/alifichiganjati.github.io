@@ -38,7 +38,7 @@ const SkillPage = () => {
         data-aos-mirror="true"
         data-aos-once="true"
         data-aos-anchor-placement="top-center"
-        className="mt-5 flex w-[400px] rounded border border-black bg-secondary p-5 dark:bg-dark-primary md:w-[500px] lg:w-[800px]"
+        className="mt-5 min-w-[350px] rounded border border-black bg-secondary p-5 dark:bg-dark-primary md:w-[500px] lg:w-[800px]"
       >
         <ul className=" grid  w-full grid-cols-2 place-content-between place-items-center gap-5 md:grid-cols-3 lg:grid-cols-5">
           <li className="m-2 h-16 w-16">

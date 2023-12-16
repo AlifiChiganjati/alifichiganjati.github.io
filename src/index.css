@@ -12,7 +12,7 @@
 
 @layer utilities {
   .navLink {
-    @apply relative tracking-[1px] after:absolute  after:-bottom-2 after:left-0 after:h-1 after:w-0 after:rounded-xl after:bg-secondary after:duration-500 after:ease-in-out after:content-[''] hover:text-text-primary hover:duration-500 hover:ease-in-out hover:after:w-full dark:after:bg-dark-text-primary dark:hover:text-dark-light;
+    @apply relative tracking-[1px] after:absolute  after:-bottom-2 after:left-0 after:h-1 after:w-0 after:rounded-xl after:bg-secondary after:duration-500 after:ease-in-out after:content-[''] hover:text-white hover:duration-500 hover:ease-in-out hover:after:w-full dark:after:bg-dark-text-primary dark:hover:text-dark-light;
   }
 
   #dark-toggle:checked ~ label div.toggle-dot {

@@ -32,7 +32,7 @@ const Navbar = () => {
         <NavCarousel
           onClick={() => setSideNav(!sideNav)}
           variant="after:bg-text-primary  text-dark-secondary"
-          className="p4-4 flex flex-col gap-5 px-2 text-xl sm:text-2xl"
+          className=" flex flex-col  pt-4 text-xl sm:text-2xl"
         />
       </SideNav>
     </header>

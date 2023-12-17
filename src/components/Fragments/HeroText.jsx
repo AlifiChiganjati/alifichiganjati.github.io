@@ -19,17 +19,17 @@ const HeroText = ({
       data-aos-duration={dataAosDuration}
       data-aos-easing={dataAosEasing}
       data-aos-delay={dataAosDelay}
-      className="flex  flex-col px-2 pt-20 md:w-1/2 md:pt-0 lg:ml-2"
+      className="flex flex-col px-2 pt-20  md:w-1/2 md:pt-0 lg:ml-2"
     >
-      <p className="text-shadow-none mb-2 text-xl font-normal  normal-case text-dark-primary dark:text-dark-light md:text-2xl">
+      <p className="text-shadow-none mb-2 text-lg font-normal normal-case  text-dark-primary dark:text-dark-light min-[400px]:text-xl md:text-2xl">
         Hi, I'm
       </p>
-      <h2 className="text-shadow flex cursor-auto  text-2xl font-bold uppercase text-primary dark:text-dark-light md:text-3xl lg:text-5xl">
+      <h2 className="text-shadow flex cursor-auto text-xl  font-bold uppercase text-primary dark:text-dark-light min-[400px]:text-2xl md:text-3xl lg:text-5xl">
         {typeEffect}
         <Cursor />
       </h2>
 
-      <p className="mt-2  text-base text-dark-primary dark:text-dark-text-primary md:text-xl">
+      <p className="mt-2 text-sm min-[400px]:text-base text-base text-dark-primary dark:text-dark-text-primary md:text-xl">
         I specialize in building responsive and user-friendly Interfaces. I'm
         committed to employing the lastest technologies to elevate web
         development projects. As a coder, I'm always looking for new challenges

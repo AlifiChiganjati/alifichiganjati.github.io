@@ -36,7 +36,7 @@ const ProjectPage = () => {
         data-aos-anchor-placement="top-center"
         className="mt-5 flex flex-wrap items-center justify-center gap-5 "
       >
-        <div className="flex h-auto w-[300px] cursor-pointer flex-col items-center justify-center gap-5 border border-primary opacity-75 shadow hover:opacity-100">
+        <div className="flex h-auto w-[300px] cursor-pointer flex-col items-center justify-center gap-5 border border-primary opacity-75 shadow hover:opacity-100 active:opacity-100 dark:border-light">
           <div className="">
             <img src="https://placehold.co/300x300" alt="Image of project" />
           </div>
@@ -48,7 +48,7 @@ const ProjectPage = () => {
             perferendis quis ad ut laudantium odio unde,
           </p>
         </div>
-        <div className="flex h-auto w-[300px] cursor-pointer flex-col items-center justify-center gap-5 border border-primary opacity-75 shadow hover:opacity-100">
+        <div className="flex h-auto w-[300px] cursor-pointer flex-col items-center justify-center gap-5 border border-primary opacity-75 shadow hover:opacity-100 active:opacity-100 dark:border-light">
           <div className="">
             <img src="https://placehold.co/300x300" alt="Image of project" />
           </div>
@@ -60,7 +60,7 @@ const ProjectPage = () => {
             perferendis quis ad ut laudantium odio unde,
           </p>
         </div>
-        <div className="flex h-auto w-[300px] cursor-pointer flex-col items-center justify-center gap-5 border border-primary opacity-75 shadow hover:opacity-100">
+        <div className="flex h-auto w-[300px] cursor-pointer flex-col items-center justify-center gap-5 border border-primary opacity-75 shadow hover:opacity-100 active:opacity-100 dark:border-light">
           <div className="">
             <img src="https://placehold.co/300x300" alt="Image of project" />
           </div>

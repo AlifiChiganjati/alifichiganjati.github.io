@@ -16,17 +16,17 @@ const HeroPage = () => {
       id="hero"
       className="flex h-screen w-full flex-col items-center justify-center bg-text-primary pt-20 dark:bg-dark-secondary md:flex-row md:pt-0"
     >
-      <HeroText
-        dataAos="fade-right"
-        dataAosDuration="1000"
-        dataAosDelay="200"
-        dataAosEasing="ease-in-out"
-      />
       <HeroImage
         src={heroImage}
         dataAos="fade-down"
         dataAosDuration="1000"
         dataAosDelay="300"
+        dataAosEasing="ease-in-out"
+      />
+      <HeroText
+        dataAos="fade-left"
+        dataAosDuration="1000"
+        dataAosDelay="200"
         dataAosEasing="ease-in-out"
       />
     </section>

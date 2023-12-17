@@ -19,9 +19,9 @@ const HeroText = ({
       data-aos-duration={dataAosDuration}
       data-aos-easing={dataAosEasing}
       data-aos-delay={dataAosDelay}
-      className="flex flex-col  px-2 py-4 md:w-1/2 lg:mr-7"
+      className="flex flex-col  px-2 pb-4 md:w-1/2 lg:mr-7"
     >
-      <p className="text-shadow-none mb-2 text-2xl font-normal normal-case text-dark-primary dark:text-dark-light">
+      <p className="text-shadow-none mb-2 text-xl font-normal  normal-case text-dark-primary dark:text-dark-light md:text-2xl">
         Hi, I'm
       </p>
       <h2 className="text-shadow flex cursor-auto  text-2xl font-bold uppercase text-primary dark:text-dark-light md:text-3xl lg:text-5xl">

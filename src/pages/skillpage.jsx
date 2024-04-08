@@ -3,6 +3,8 @@ import css from "../assets/Image/css.png";
 import js from "../assets/Image/js.png";
 import react from "../assets/Image/react.svg";
 import tailwind from "../assets/Image/tailwindcss.svg";
+import posgresql from "../assets/Image/elephant.png";
+import golang from "../assets/Image/golang.png";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -40,7 +42,7 @@ const SkillPage = () => {
         data-aos-anchor-placement="top-center"
         className="mt-5 min-w-[300px] rounded border border-black bg-secondary p-5 dark:bg-dark-primary md:w-[500px] lg:w-[800px]"
       >
-        <ul className=" grid  w-full grid-cols-2 place-content-between place-items-center gap-5 md:grid-cols-3 lg:grid-cols-5">
+        <ul className=" grid  w-full grid-cols-2 place-content-between place-items-center gap-5 md:grid-cols-3 lg:grid-cols-4">
           <li className="m-2 h-16 w-16">
             <img src={html} alt="html" />
           </li>
@@ -55,6 +57,12 @@ const SkillPage = () => {
           </li>
           <li className="m-2 h-16 w-16">
             <img src={react} alt="html" />
+          </li>
+          <li className="h-28 w-28">
+            <img src={golang} alt="golang" />
+          </li>
+          <li className="m-2 h-16 w-16">
+            <img src={posgresql} alt="postgresql" />
           </li>
         </ul>
       </div>

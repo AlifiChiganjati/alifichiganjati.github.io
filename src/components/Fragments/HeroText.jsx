@@ -7,7 +7,7 @@ const HeroText = ({
   dataAosDelay,
 }) => {
   const [typeEffect] = useTypewriter({
-    words: ["Alifi Chiganjati 👋", "Front-end Developer 💻"],
+    words: ["Alifi Chiganjati👋", "Full-Stack Developer💻"],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 40,
@@ -29,7 +29,7 @@ const HeroText = ({
         <Cursor />
       </h2>
 
-      <p className="mt-2 text-sm min-[400px]:text-base  text-justify text-dark-primary dark:text-dark-text-primary md:text-xl">
+      <p className="mt-2 text-justify text-sm  text-dark-primary dark:text-dark-text-primary min-[400px]:text-base md:text-xl">
         I specialize in building responsive and user-friendly Interfaces. I'm
         committed to employing the lastest technologies to elevate web
         development projects. As a coder, I'm always looking for new challenges

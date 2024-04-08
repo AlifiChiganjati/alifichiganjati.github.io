@@ -14,7 +14,7 @@ const NavLinks = ({
         spy={true}
         smooth={true}
         offset={-30}
-        duration={3000}
+        duration={1000}
         onClick={onClick}
         className="navLink  mx-6 cursor-pointer text-lg font-semibold text-text-primary dark:text-dark-text-primary md:text-xl lg:text-2xl"
       >

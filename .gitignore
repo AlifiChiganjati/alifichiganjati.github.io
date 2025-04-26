@@ -26,3 +26,4 @@ pnpm-debug.log*
 # vscode setting 
 .vscode/
 
+bun.lock

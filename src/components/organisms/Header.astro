@@ -1,0 +1,23 @@
+---
+import MobileMenu from "../molecules/MobileMenu.tsx";
+import { Icon } from "astro-icon/components";
+---
+
+<header class="sticky w-full">
+  <div
+    class="container mx-auto hidden items-center justify-between p-4 lg:flex"
+  >
+    <a
+      href="/"
+      class="font-serif text-lg font-semibold capitalize lg:text-2xl 2xl:text-3xl"
+    >
+      alifi chiganjati
+    </a>
+    <nav class="hidden lg:flex">
+      <ul>
+        <li><a href="/">home</a></li>
+      </ul>
+    </nav>
+  </div>
+  <MobileMenu client:load><Icon name="menu" /></MobileMenu>
+</header>

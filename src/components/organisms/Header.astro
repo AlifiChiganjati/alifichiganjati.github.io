@@ -1,9 +1,10 @@
 ---
 import MobileMenu from "../molecules/MobileMenu.tsx";
 import { Icon } from "astro-icon/components";
+import DarkModeToggle from "../molecules/DarkModeToggle.tsx";
 ---
 
-<header class="sticky w-full">
+<header class="sticky w-full bg-(--bg-surface)">
   <div
     class="container mx-auto hidden items-center justify-between p-4 lg:flex"
   >
@@ -13,11 +14,16 @@ import { Icon } from "astro-icon/components";
     >
       alifi chiganjati
     </a>
-    <nav class="hidden lg:flex">
-      <ul>
-        <li><a href="/">home</a></li>
-      </ul>
-    </nav>
+    <div class="flex items-center gap-4">
+      <nav class="hidden lg:flex">
+        <ul>
+          <li><a href="/">home</a></li>
+        </ul>
+      </nav>
+      <DarkModeToggle client:load />
+    </div>
   </div>
-  <MobileMenu client:load><Icon name="menu" /></MobileMenu>
+  <MobileMenu client:load>
+    <Icon name="menu" />
+  </MobileMenu>
 </header>

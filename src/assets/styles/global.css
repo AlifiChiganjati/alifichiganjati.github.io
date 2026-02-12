@@ -34,8 +34,20 @@
 @theme {
   --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-serif: "Merriweather", serif;
-}
 
+  --bg-page: #f8f9fa;
+  --bg-surface: #ffffff;
+  --text-primary: #212529;
+  --text-secondary: #495057;
+  --accent: #3b82f6;
+}
+.dark {
+  --bg-page: #0f172a;
+  --bg-surface: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --accent: #60a5fa;
+}
 @layer base {
   body {
     @apply font-sans;
@@ -49,7 +61,4 @@
   h6 {
     @apply font-serif;
   }
-}
-
-@layer components {
 }

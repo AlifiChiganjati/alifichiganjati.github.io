@@ -46,7 +46,7 @@ const MobileMenu = () => {
 
       {open && (
         <div
-          className="fixed inset-0 z-10 bg-black/50"
+          className="fixed inset-0 z-10 bg-black/80"
           onClick={() => setOpen(false)}
         />
       )}

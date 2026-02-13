@@ -1,14 +1,77 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import heroSection from "../assets/images/hero/cat.gif";
+import { IoIosBug } from "react-icons/io";
+import { IoIosRocket } from "react-icons/io";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { PiHandshakeFill, PiHandWavingFill } from "react-icons/pi";
 ---
 
 <BaseLayout title="Home" description="Short Intro">
-  <section>
-    <h1 class="flex p-4 text-4xl font-bold underline">
-      Portofolio Under Maintenance!
-    </h1>
-    <p class="text-4xl italic">test jakarta sans</p>
-    <Icon name="file" class="text-4xl text-red-400" />
+  <!-- start Hero Section -->
+  <section
+    class="relative z-0 flex w-full flex-col items-center justify-center gap-4 lg:flex-row"
+  >
+    <div
+      class="z-0 flex flex-col items-center justify-center lg:relative lg:w-1/2"
+    >
+      <Image src={heroSection} alt="cat" />
+      <div class="absolute bottom-1 hidden gap-4 lg:grid lg:grid-cols-3">
+        <a href="https://github.com/AlifiChiganjati" target="_blank">
+          <FaGithub className="mx-2 text-4xl" />
+        </a>
+        <a href="https://www.linkedin.com/in/alifi-chiganjati" target="_blank">
+          <FaLinkedin className="mx-2 text-4xl" />
+        </a>
+        <a href="https://www.instagram.com/alifi_chiganjati" target="_blank">
+          <FaInstagram className="mx-2 text-4xl" />
+        </a>
+      </div>
+    </div>
+    <div class="flex flex-col gap-2 lg:w-1/2">
+      <h2
+        class="text-lg font-bold text-(--text-primary) md:text-xl lg:text-2xl xl:text-4xl"
+      >
+        Hello! My Name Alifi Chiganjati <PiHandWavingFill
+          className="relative top-0 ml-1 inline-block"
+        />
+      </h2>
+
+      <p class="text-md lg:text-lg">
+        A Software Engineer who loves coding, drinking coffee, and sometimes
+        chatting with bugs until we finally make peace{" "}
+        <PiHandshakeFill className="relative top-0 ml-1 inline-block" />
+        <IoIosBug className="relative top-0 ml-1 inline-block" />
+      </p>
+
+      <p class="text-md text-(--text-secondary) lg:text-lg">
+        If you have a cool idea, an exciting project, or just want to say
+        “hello,” I'm always available (as long as the WiFi is secure and coffee
+        is available).
+      </p>
+      <div class="pt-4">
+        <a
+          href="contact"
+          class="md:max-w inline-block w-full rounded-xl bg-(--border-darkmode) px-6 py-3 text-center font-semibold opacity-90 transition hover:scale-105 hover:bg-(--border-darkmode) hover:opacity-100 sm:w-40 md:w-48"
+        >
+          Let's Chat <IoIosRocket
+            className="relative top-0 ml-1 inline-block"
+          />
+        </a>
+      </div>
+      <div class="mt-4 grid grid-cols-3 gap-4 lg:hidden">
+        <a href="https://github.com/AlifiChiganjati" target="_blank">
+          <FaGithub className="mx-2 text-4xl" />
+        </a>
+        <a href="https://www.linkedin.com/in/alifi-chiganjati" target="_blank">
+          <FaLinkedin className="mx-2 text-4xl" />
+        </a>
+        <a href="https://www.instagram.com/alifi_chiganjati" target="_blank">
+          <FaInstagram className="mx-2 text-4xl" />
+        </a>
+      </div>
+    </div>
   </section>
+  <!-- end Hero Section -->
 </BaseLayout>

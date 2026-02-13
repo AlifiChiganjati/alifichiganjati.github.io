@@ -22,32 +22,33 @@
 
 ## Task
 
-1. [ ] HomePage:
+- [x] HomePage:
+  - [x] Hero Section
+  - [x] Short Intro
+  - [x] Cta ke contact
 
-- [ ] Hero Section
-- [ ] Short Intro
-- [ ] Highlight Projects
-- [ ] Cta ke contact
-- [ ] CV download
+---
 
-1. [ ] AboutPage:
+- [ ] AboutPage:
+  - [ ] Bio
+  - [ ] Skill set
+  - [ ] Experience timeline
 
-- [ ] Bio
-- [ ] Skill set
-- [ ] Experience timeline
+---
 
-1. [ ] ProjectsPage:
+- [ ] ProjectsPage:
+  - [ ] List Projects
+  - [ ] Detail Project
 
-- [ ] List Projects
-- [ ] Detail Project
+---
 
-1. [ ] ContactPage:
+- [ ] ContactPage:
+  - [ ] List Highlight Projects
+  - [ ] Detail Project
 
-- [ ] List Highlight Projects
-- [ ] Detail Project
+---
 
-1. [ ] Blogs
-
-- [ ] List Blog
-- [ ] Card Blog
-- [ ] Blog using md
+- [ ] Blogs
+  - [ ] List Blog
+  - [ ] Card Blog
+  - [ ] Blog using md

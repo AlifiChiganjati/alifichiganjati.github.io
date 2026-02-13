@@ -17,7 +17,7 @@ const NavbarMenu = () => {
     { name: "Blogs", href: "/blogs" },
   ];
   return (
-    <ul className="mt-4 flex flex-col items-start justify-center gap-4 space-y-4 lg:flex-row">
+    <ul className="z-50 mt-4 flex flex-col items-start justify-center gap-4 space-y-4 lg:flex-row">
       {menus.map((menu) => (
         <NavLink
           key={menu.href}

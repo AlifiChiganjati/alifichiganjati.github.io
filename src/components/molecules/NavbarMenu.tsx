@@ -10,7 +10,7 @@ const NavbarMenu = () => {
   const isActive = (href: string) => href === pathname;
 
   const menus = [
-    { name: "Home", href: "/" },
+    // { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },

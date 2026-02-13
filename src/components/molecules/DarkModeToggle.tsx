@@ -26,9 +26,8 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="relative flex h-8 w-16 items-center rounded-full bg-gray-300 p-1 transition-colors duration-300 dark:bg-gray-700"
+      className="relative flex h-8 w-16 items-center rounded-full border border-(--border-darkmode) bg-(--bg-page) p-1 transition-colors duration-300"
     >
-      {/* ICON LAYER */}
       <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-2">
         <HiOutlineMoon className="text-lg text-blue-400" />
         <HiOutlineSun className="text-lg text-yellow-500" />
@@ -36,7 +35,7 @@ export default function DarkModeToggle() {
 
       {/* KNOB */}
       <span
-        className={`absolute top-1 h-6 w-6 rounded-full bg-white shadow-md transition-all duration-300 dark:bg-gray-900 ${
+        className={`absolute top-1 h-6 w-6 rounded-full bg-gray-600 shadow-md transition-all duration-300 ${
           isDark ? "left-[calc(100%-1.75rem)]" : "left-1"
         }`}
       />

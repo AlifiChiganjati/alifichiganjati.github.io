@@ -40,6 +40,7 @@
   --text-primary: #212529;
   --text-secondary: #495057;
   --accent: #3b82f6;
+  --border-darkmode: #d1d5dc;
 }
 .dark {
   --bg-page: #0f172a;
@@ -47,6 +48,7 @@
   --text-primary: #f1f5f9;
   --text-secondary: #94a3b8;
   --accent: #60a5fa;
+  --border-darkmode: #090909;
 }
 @layer base {
   body {

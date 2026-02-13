@@ -1,13 +1,10 @@
-import { useState } from "react";
-import type { ReactElement } from "react";
+import { useEffect, useState } from "react";
 import DarkModeToggle from "./DarkModeToggle";
 import { IoMdClose } from "react-icons/io";
+import { MdOutlineMenu } from "react-icons/md";
+import NavbarMenu from "./NavbarMenu";
 
-interface MobileMenuProps {
-  children: ReactElement;
-}
-
-export default function MobileMenu({ children }: MobileMenuProps) {
+const MobileMenu = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -17,10 +14,10 @@ export default function MobileMenu({ children }: MobileMenuProps) {
           <a href="/">
             <h1 className="text-lg font-semibold">Alifi Chiganjati</h1>
           </a>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
             <DarkModeToggle />
             <button onClick={() => setOpen(!open)} className="text-3xl">
-              {children}
+              <MdOutlineMenu />
             </button>
           </div>
         </div>
@@ -34,18 +31,14 @@ export default function MobileMenu({ children }: MobileMenuProps) {
                     Alifi Chiganjati
                   </h1>
                 </a>
-                <button onClick={() => setOpen(!open)} className="text-3xl">
+                <button
+                  onClick={() => setOpen(!open)}
+                  className="text-gray text-3xl"
+                >
                   <IoMdClose className="h-6 w-6" />
                 </button>
               </div>
-
-              <ul className="mt-4 space-y-4">
-                <li>
-                  <a href="/" className="flex font-semibold">
-                    Home
-                  </a>
-                </li>
-              </ul>
+              <NavbarMenu />
             </div>
           </div>
         )}
@@ -59,4 +52,6 @@ export default function MobileMenu({ children }: MobileMenuProps) {
       )}
     </>
   );
-}
+};
+
+export default MobileMenu;

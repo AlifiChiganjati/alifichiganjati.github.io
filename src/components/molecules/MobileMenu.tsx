@@ -12,7 +12,9 @@ const MobileMenu = () => {
       <div className="sticky top-0 left-0 z-50 w-full lg:hidden">
         <div className="container mx-auto flex items-center justify-between p-4">
           <a href="/">
-            <h1 className="text-lg font-semibold">Alifi Chiganjati</h1>
+            <h1 className="text-lg font-semibold uppercase lg:text-2xl xl:text-3xl 2xl:text-4xl">
+              Alifi Chiganjati
+            </h1>
           </a>
           <div className="flex items-center gap-4">
             <DarkModeToggle />
@@ -27,7 +29,7 @@ const MobileMenu = () => {
             <div className="container mx-auto p-4">
               <div className="flex items-center justify-between">
                 <a href="/">
-                  <h1 className="text-(--text-pr text-lg font-semibold">
+                  <h1 className="text-lg font-semibold uppercase">
                     Alifi Chiganjati
                   </h1>
                 </a>

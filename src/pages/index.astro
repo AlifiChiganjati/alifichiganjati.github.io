@@ -1,48 +1,54 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { Image } from "astro:assets";
-import heroSection from "../assets/images/hero/hero_section.png";
 import { IoIosBug } from "react-icons/io";
 import { IoIosRocket } from "react-icons/io";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { PiHandshakeFill, PiHandWavingFill } from "react-icons/pi";
+import { Image } from "astro:assets";
+import heroSection from "../assets/images/hero/hero_section.png";
 ---
 
 <BaseLayout title="Home" description="Short Intro">
   <!-- start Hero Section -->
-  <section class="flex min-h-[80vh] items-center justify-normal">
-    <div class="flex flex-col gap-2 lg:w-1/2 lg:text-left">
+
+  <section
+    class="grid min-h-[80vh] grid-cols-1 items-center gap-8 lg:grid-cols-[3fr_2fr]"
+  >
+    <div class="order-2 flex flex-col gap-2 lg:order-1">
       <h2
-        class="text-lg font-bold text-(--text-primary) md:text-xl lg:text-2xl xl:text-4xl"
+        class="fade-up text-lg font-bold text-(--text-primary) opacity-0 delay-1 md:text-2xl lg:text-3xl xl:text-4xl"
       >
-        Hello! My Name Alifi Chiganjati <PiHandWavingFill
-          className="relative top-0 ml-1 inline-block"
-        />
+        Hello! My Name <span class="text-(--accent)"> Alifi Chiganjati </span>
+        <PiHandWavingFill className="relative top-full ml-1 inline-block" />
       </h2>
 
-      <p class="text-md text-justify lg:text-lg">
+      <p
+        class="fade-up sm:text-md text-justify text-sm opacity-0 delay-2 md:text-base lg:text-lg"
+      >
         A Software Engineer who loves coding, drinking coffee, and sometimes
         chatting with bugs until we finally make peace
         <PiHandshakeFill className="relative top-0 ml-1 inline-block" />
         <IoIosBug className="relative top-0 ml-1 inline-block" />
       </p>
 
-      <p class="text-md text-justify text-(--text-secondary) lg:text-lg">
+      <p
+        class="fade-up sm:text-md text-justify text-sm text-(--text-secondary) opacity-0 delay-3 md:text-base lg:text-lg"
+      >
         If you have a cool idea, an exciting project, or just want to say
         “hello” I'm always available (as long as the WiFi is secure and coffee
         is available).
       </p>
-      <div class="pt-4">
+      <div class="fade-up pt-4 opacity-0 delay-4">
         <a
           href="contact"
           class="md:max-w inline-block w-full rounded-xl bg-(--border-darkmode) px-6 py-3 text-center font-semibold opacity-90 transition hover:scale-105 hover:bg-(--border-darkmode) hover:opacity-100 sm:w-40 md:w-48"
         >
           Let's Chat <IoIosRocket
-            className="relative top-0 ml-1 inline-block"
+            className="relative top-full ml-1 inline-block"
           />
         </a>
       </div>
-      <div class="mt-4 grid grid-cols-3 lg:max-w-md">
+      <div class="fade-up mt-4 grid grid-cols-3 opacity-0 delay-4 sm:max-w-md">
         <a
           href="https://github.com/AlifiChiganjati"
           class="flex items-center justify-center"
@@ -66,6 +72,69 @@ import { PiHandshakeFill, PiHandWavingFill } from "react-icons/pi";
         </a>
       </div>
     </div>
+    <div
+      class="fade-up relative order-1 flex items-center justify-center delay-1000 lg:order-2"
+    >
+      <div
+        class="fade-up relative order-1 flex items-center justify-center delay-1000 lg:order-2"
+      >
+        <div
+          class="absolute -z-10 h-4/5 w-4/5 rounded-full bg-(--cover-hero) opacity-40 blur-[80px]"
+        >
+        </div>
+
+        <div
+          class="relative flex w-full justify-center mask-[linear-gradient(to_bottom,black_70%,transparent_100%)]"
+        >
+          <Image
+            src={heroSection}
+            alt="hero img"
+            class="relative z-10 w-full max-w-48 object-bottom drop-shadow-2xl sm:max-w-64 md:max-w-xs lg:max-w-sm xl:max-w-md"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end Hero Section -->
   </section>
-  <!-- end Hero Section -->
+
 </BaseLayout>
+<style is:inline>
+@keyframes fadeUp {
+from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+/* Contoh logic animasinya */
+@keyframes float {
+0% {
+  transform: translateY(0px);
+}
+50% {
+  transform: translateY(-15px);
+}
+100% {
+  transform: translateY(0px);
+}
+}
+.fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+.delay-4 {
+  animation-delay: 0.8s;
+}
+</style>

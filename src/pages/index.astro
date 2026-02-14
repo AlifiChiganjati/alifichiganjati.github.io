@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
-import heroSection from "../assets/images/hero/cat.gif";
+import heroSection from "../assets/images/hero/hero_section.png";
 import { IoIosBug } from "react-icons/io";
 import { IoIosRocket } from "react-icons/io";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -10,26 +10,8 @@ import { PiHandshakeFill, PiHandWavingFill } from "react-icons/pi";
 
 <BaseLayout title="Home" description="Short Intro">
   <!-- start Hero Section -->
-  <section
-    class="relative z-0 flex w-full flex-col items-center justify-center gap-4 lg:flex-row"
-  >
-    <div
-      class="z-0 flex flex-col items-center justify-center lg:relative lg:w-1/2"
-    >
-      <Image src={heroSection} alt="cat" />
-      <div class="absolute bottom-1 hidden gap-4 lg:grid lg:grid-cols-3">
-        <a href="https://github.com/AlifiChiganjati" target="_blank">
-          <FaGithub className="mx-2 text-4xl" />
-        </a>
-        <a href="https://www.linkedin.com/in/alifi-chiganjati" target="_blank">
-          <FaLinkedin className="mx-2 text-4xl" />
-        </a>
-        <a href="https://www.instagram.com/alifi_chiganjati" target="_blank">
-          <FaInstagram className="mx-2 text-4xl" />
-        </a>
-      </div>
-    </div>
-    <div class="flex flex-col gap-2 lg:w-1/2">
+  <section class="flex min-h-[80vh] items-center justify-normal">
+    <div class="flex flex-col gap-2 lg:w-1/2 lg:text-left">
       <h2
         class="text-lg font-bold text-(--text-primary) md:text-xl lg:text-2xl xl:text-4xl"
       >
@@ -38,16 +20,16 @@ import { PiHandshakeFill, PiHandWavingFill } from "react-icons/pi";
         />
       </h2>
 
-      <p class="text-md lg:text-lg">
+      <p class="text-md text-justify lg:text-lg">
         A Software Engineer who loves coding, drinking coffee, and sometimes
-        chatting with bugs until we finally make peace{" "}
+        chatting with bugs until we finally make peace
         <PiHandshakeFill className="relative top-0 ml-1 inline-block" />
         <IoIosBug className="relative top-0 ml-1 inline-block" />
       </p>
 
-      <p class="text-md text-(--text-secondary) lg:text-lg">
+      <p class="text-md text-justify text-(--text-secondary) lg:text-lg">
         If you have a cool idea, an exciting project, or just want to say
-        “hello,” I'm always available (as long as the WiFi is secure and coffee
+        “hello” I'm always available (as long as the WiFi is secure and coffee
         is available).
       </p>
       <div class="pt-4">
@@ -60,7 +42,7 @@ import { PiHandshakeFill, PiHandWavingFill } from "react-icons/pi";
           />
         </a>
       </div>
-      <div class="mt-4 grid grid-cols-3 gap-4 lg:hidden">
+      <div class="mt-4 grid grid-cols-3 lg:max-w-md">
         <a
           href="https://github.com/AlifiChiganjati"
           class="flex items-center justify-center"

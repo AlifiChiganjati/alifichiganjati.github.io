@@ -1,66 +1,250 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Title from "../components/atoms/Title.astro";
 import "../assets/styles/animation.css";
-import Accordion from "../components/organisms/Accrodion.tsx";
 import Paragraf from "../components/atoms/Paragraf.astro";
 import { IoIosArrowForward } from "react-icons/io";
+import Title from "../components/atoms/Title.astro";
+import { FaGolang } from "react-icons/fa6";
+import {
+  FaLaravel,
+  FaPhp,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaGitAlt,
+  FaLinux,
+} from "react-icons/fa";
+import {
+  SiMysql,
+  SiExpress,
+  SiJavascript,
+  SiTailwindcss,
+} from "react-icons/si";
 ---
 
 <BaseLayout title="Home" description="Short Intro">
-  <details class="group rounded-lg border">
-    <summary class="flex cursor-pointer items-center justify-between p-4">
-      <span>About Me</span>
-      <span class="transition-transform group-open:rotate-90">
-        <IoIosArrowForward /></span
+  <section class="mx-auto max-w-3xl space-y-4 py-4">
+    <!-- start about me -->
+    <details
+      class="group rounded-xl border border-(--border-default) bg-(--bg-surface) shadow-sm transition hover:shadow-md"
+    >
+      <summary
+        class="flex cursor-pointer items-center justify-between px-6 py-4"
       >
-    </summary>
-
-    <div class="border-t p-4">
-      <Paragraf
-        >Junior Software Engineer with a strong focus on backend engineering. I
-        build scalable server-side systems, design databases and APIs, and
-        ensure smooth end-to-end integration. With a background in Communication
-        Science, I translate business needs into structured technical solutions
-        and value clean, maintainable architecture.
-      </Paragraf>
-    </div>
-  </details>
-
-  <!-- start nested -->
-  <details class="group rounded-lg border">
-    <summary class="flex cursor-pointer items-center justify-between p-4">
-      <span>Nested</span>
-      <span class="transition-transform group-open:rotate-90">
-        <IoIosArrowForward />
-      </span>
-    </summary>
-
-    <details class="group/nested-1 rounded-lg border">
-      <summary class="flex cursor-pointer items-center justify-between p-4">
-        <span>Nested 1</span>
-        <span class="transition-transform group-open/nested-1:rotate-90">
+        <Title title="about me" as="h2" />
+        <span
+          class="text-(--text-secondary) transition-transform duration-300 group-open:rotate-90"
+        >
           <IoIosArrowForward />
         </span>
       </summary>
 
-      <div class="border-t p-4">
-        <Paragraf> Junior Software Engineer with a strong focus... </Paragraf>
+      <div
+        class="border-t border-(--border-default) px-6 py-4 text-(--text-secondary)"
+      >
+        <Paragraf>
+          Junior Software Engineer with a strong focus on backend engineering. I
+          build scalable server-side systems, design databases and APIs, and
+          ensure smooth end-to-end integration. With a background in
+          Communication Science, I translate business needs into structured
+          technical solutions and value clean, maintainable architecture.
+        </Paragraf>
       </div>
     </details>
+    <!-- end about me -->
 
-    <details class="group rounded-lg border">
-      <summary class="flex cursor-pointer items-center justify-between p-4">
-        <span>Nested 2</span>
-        <span class="transition-transform group-open:rotate-90">
+    <!-- start EXPERIENCE -->
+    <details
+      class="group rounded-xl border border-(--border-default) bg-(--bg-surface) shadow-sm transition hover:shadow-md"
+    >
+      <summary
+        class="flex cursor-pointer items-center justify-between px-6 py-4"
+      >
+        <Title title="my experience" as="h2" />
+        <span
+          class="text-(--text-secondary) transition-transform duration-300 group-open:rotate-90"
+        >
           <IoIosArrowForward />
         </span>
       </summary>
 
-      <div class="border-t p-4">
-        <Paragraf> Junior Software Engineer with a strong focus... </Paragraf>
+      <div class="space-y-3 border-t border-(--border-default) px-4 py-4">
+        <!-- start NUSA -->
+        <details
+          class="group/nusa rounded-lg bg-(--bg-surface-muted) transition hover:bg-(--bg-hover)"
+        >
+          <summary
+            class="flex cursor-pointer items-center justify-between px-4 py-3"
+          >
+            <div class="flex flex-col">
+              <h3 class="text-base font-semibold text-(--text-primary)">
+                Nusa
+              </h3>
+              <span class="text-sm text-(--text-muted)">
+                Mar 2025 – Mar 2026
+              </span>
+            </div>
+            <span
+              class="text-(--text-muted) transition-transform duration-300 group-open/nusa:rotate-90"
+            >
+              <IoIosArrowForward />
+            </span>
+          </summary>
+
+          <div
+            class="border-t border-(--border-default) px-6 py-4 text-sm text-(--text-secondary)"
+          >
+            <ul class="list-disc space-y-2 pl-5">
+              <li>Developed web apps using PHP & Laravel</li>
+              <li>Fixed production bugs & handled user reports</li>
+              <li>Maintained features and optimized queries</li>
+            </ul>
+          </div>
+        </details>
+        <!-- end NUSA -->
+
+        <!-- start kamar pelajar -->
+        <details
+          class="group/kamar rounded-lg bg-(--bg-surface-muted) transition hover:bg-(--bg-hover)"
+        >
+          <summary
+            class="flex cursor-pointer items-center justify-between px-4 py-3"
+          >
+            <div class="flex flex-col">
+              <h3 class="text-base font-semibold text-(--text-primary)">
+                Kamar Pelajar
+              </h3>
+              <span class="text-sm text-(--text-muted)">
+                Jan 2025 – Present
+              </span>
+            </div>
+            <span
+              class="text-(--text-muted) transition-transform duration-300 group-open/kamar:rotate-90"
+            >
+              <IoIosArrowForward />
+            </span>
+          </summary>
+
+          <div
+            class="border-t border-(--border-default) px-6 py-4 text-sm text-(--text-secondary)"
+          >
+            <ul class="list-disc space-y-2 pl-5">
+              <li>Built backend services using Golang</li>
+              <li>Worked remotely ~10 hours per week</li>
+            </ul>
+          </div>
+        </details>
+        <!-- end kamar pelajar -->
       </div>
     </details>
-  </details>
-  <!-- end nested -->
+    <!-- start my skill -->
+    <details
+      class="group rounded-xl border border-(--border-default) bg-(--bg-surface) shadow-sm transition hover:shadow-md"
+    >
+      <summary
+        class="flex cursor-pointer items-center justify-between px-6 py-4"
+      >
+        <Title title="my skill" as="h2" />
+        <span
+          class="text-(--text-secondary) transition-transform duration-300 group-open:rotate-90"
+        >
+          <IoIosArrowForward />
+        </span>
+      </summary>
+
+      <div class="space-y-8 border-t border-(--border-default) px-6 py-6">
+        <!-- Core Engineering -->
+        <div class="space-y-3">
+          <h3
+            class="text-sm font-semibold tracking-wide text-(--text-muted) uppercase"
+          >
+            Core Engineering
+          </h3>
+
+          <div
+            class="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          >
+            <span
+              class="w-fit rounded-full bg-(--bg-surface-muted) px-4 py-2 text-sm"
+            >
+              API Design
+            </span>
+            <span
+              class="w-fit rounded-full bg-(--bg-surface-muted) px-4 py-2 text-sm"
+            >
+              Database Modeling
+            </span>
+            <span
+              class="w-fit rounded-full bg-(--bg-surface-muted) px-4 py-2 text-sm"
+            >
+              Query Optimization
+            </span>
+
+            <span
+              class="w-fit rounded-full bg-(--bg-surface-muted) px-4 py-2 text-sm"
+            >
+              Clean Architecture
+            </span>
+          </div>
+        </div>
+
+        <!-- Backend Stack -->
+        <div class="space-y-3">
+          <h3
+            class="text-sm font-semibold tracking-wide text-(--text-muted) uppercase"
+          >
+            Backend Stack
+          </h3>
+
+          <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <div class="skill-card">
+              <FaGolang />
+            </div>
+            <div class="skill-card"><FaPhp /></div>
+            <div class="skill-card">
+              <FaNodeJs />
+            </div>
+            <div class="skill-card"><FaLaravel /></div>
+            <div class="skill-card"><SiExpress /></div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="space-y-3">
+          <h3
+            class="text-sm font-semibold tracking-wide text-(--text-muted) uppercase"
+          >
+            Frontend Stack
+          </h3>
+
+          <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <div class="skill-card"><FaHtml5 /></div>
+            <div class="skill-card"><FaCss3Alt /></div>
+            <div class="skill-card"><SiJavascript /></div>
+            <div class="skill-card"><SiTailwindcss /></div>
+            <div class="skill-card"><FaReact /></div>
+          </div>
+        </div>
+
+        <!-- Database and Tools -->
+        <div class="space-y-3">
+          <h3
+            class="text-sm font-semibold tracking-wide text-(--text-muted) uppercase"
+          >
+            Database & Tools
+          </h3>
+
+          <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <div class="skill-card"><SiMysql /></div>
+
+            <div class="skill-card"><FaGitAlt /></div>
+            <div class="skill-card"><FaLinux /></div>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- end my skill -->
+  </section>
 </BaseLayout>

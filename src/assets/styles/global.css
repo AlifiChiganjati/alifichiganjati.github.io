@@ -35,21 +35,42 @@
   --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-serif: "Merriweather", serif;
 
-  --bg-page: #f8f9fa;
+  --bg-page: #f5f7fa;
   --bg-surface: #ffffff;
-  --text-primary: #212529;
-  --text-secondary: #495057;
+  --bg-surface-muted: #f1f5f9;
+  --bg-hover: #eef2f7;
+
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
   --accent: #3b82f6;
-  --border-darkmode: #d1d5dc;
+  --accent-soft: rgba(59, 130, 246, 0.12);
+  --accent-strong: #2563eb;
+
+  --border-default: #e2e8f0;
+  --border-strong: #cbd5e1;
+
   --cover-hero: rgba(59, 130, 246, 0.15);
 }
+
 .dark {
   --bg-page: #0f172a;
   --bg-surface: #1e293b;
+  --bg-surface-muted: #273449;
+  --bg-hover: #334155;
+
   --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
   --accent: #60a5fa;
-  --border-darkmode: #090909;
+  --accent-soft: rgba(96, 165, 250, 0.15);
+  --accent-strong: #3b82f6;
+
+  --border-default: #334155;
+  --border-strong: #475569;
+
   --cover-hero: rgba(96, 165, 250, 0.1);
 }
 @layer base {
@@ -64,5 +85,11 @@
   h5,
   h6 {
     @apply font-serif;
+  }
+}
+
+@layer components {
+  .skill-card {
+    @apply flex items-center justify-center text-center text-2xl md:text-4xl lg:text-5xl;
   }
 }

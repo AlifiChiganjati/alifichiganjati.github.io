@@ -26,7 +26,7 @@ export default function DarkModeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="relative flex h-8 w-16 items-center rounded-full border border-(--border-darkmode) bg-(--bg-page) p-1 transition-colors duration-300"
+      className="relative flex h-8 w-16 items-center rounded-full border border-(--border-default) bg-(--bg-page) p-1 transition-colors duration-300"
     >
       <div className="pointer-events-none absolute inset-0 flex items-center justify-between px-2">
         <HiOutlineMoon className="text-lg text-blue-400" />

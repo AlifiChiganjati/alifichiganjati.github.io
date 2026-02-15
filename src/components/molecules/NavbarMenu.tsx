@@ -22,7 +22,7 @@ const NavbarMenu = () => {
         <NavLink
           key={menu.href}
           href={menu.href}
-          classLink={`${isActive(menu.href) ? "text-(--accent)" : ""} hover:text-(--accent) hover:drop-shadow-2xl capitalize font-semibold`}
+          classLink={`${isActive(menu.href) ? "text-(--accent)" : ""} hover:text-(--accent-strong) hover:drop-shadow-2xl capitalize font-semibold`}
         >
           {menu.name}
         </NavLink>

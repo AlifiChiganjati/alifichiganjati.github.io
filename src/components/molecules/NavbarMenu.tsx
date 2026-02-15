@@ -7,10 +7,14 @@ const NavbarMenu = () => {
     setPathname(window.location.pathname);
   }, []);
 
-  const normalize = (path: string) => path.replace(/\/$/, "");
+  const normalize = (path: string) => path.replace(/\/+$/, "");
 
-  const isActive = (href: string) =>
-    normalize(pathname).endsWith(normalize(href));
+  const isActive = (href: string) => {
+    const current = normalize(pathname);
+    const target = normalize(href);
+
+    return current === target || current.startsWith(target + "/");
+  };
   const menus = [
     // { name: "Home", href: "/" },
     { name: "About", href: "/about" },

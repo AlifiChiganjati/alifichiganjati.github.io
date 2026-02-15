@@ -16,7 +16,7 @@ import DarkModeToggle from "../molecules/DarkModeToggle.tsx";
     </a>
     <div class="flex items-center gap-4">
       <nav class="hidden lg:flex">
-        <NavbarMenu client:load />
+        <NavbarMenu client:only="react" />
       </nav>
       <DarkModeToggle client:load />
     </div>

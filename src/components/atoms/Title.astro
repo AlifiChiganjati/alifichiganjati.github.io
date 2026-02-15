@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  class?: string;
+}
+
+const { as: Tag = "h1", class: className } = Astro.props;
+---
+
+<Tag
+  class={`text-lg font-semibold capitalize md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl ${className}`}
+>
+  <slot />
+</Tag>

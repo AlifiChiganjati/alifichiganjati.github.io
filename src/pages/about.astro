@@ -1,11 +1,66 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Title from "../components/atoms/Title.astro";
+import "../assets/styles/animation.css";
+import Accordion from "../components/organisms/Accrodion.tsx";
+import Paragraf from "../components/atoms/Paragraf.astro";
+import { IoIosArrowForward } from "react-icons/io";
 ---
 
 <BaseLayout title="Home" description="Short Intro">
-  <!-- start Bio -->
-  <section class="">
-    <h2 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl">About Me</h2>
-  </section>
-  <!-- end Bio -->
+  <details class="group rounded-lg border">
+    <summary class="flex cursor-pointer items-center justify-between p-4">
+      <span>About Me</span>
+      <span class="transition-transform group-open:rotate-90">
+        <IoIosArrowForward /></span
+      >
+    </summary>
+
+    <div class="border-t p-4">
+      <Paragraf
+        >Junior Software Engineer with a strong focus on backend engineering. I
+        build scalable server-side systems, design databases and APIs, and
+        ensure smooth end-to-end integration. With a background in Communication
+        Science, I translate business needs into structured technical solutions
+        and value clean, maintainable architecture.
+      </Paragraf>
+    </div>
+  </details>
+
+  <!-- start nested -->
+  <details class="group rounded-lg border">
+    <summary class="flex cursor-pointer items-center justify-between p-4">
+      <span>Nested</span>
+      <span class="transition-transform group-open:rotate-90">
+        <IoIosArrowForward />
+      </span>
+    </summary>
+
+    <details class="group/nested-1 rounded-lg border">
+      <summary class="flex cursor-pointer items-center justify-between p-4">
+        <span>Nested 1</span>
+        <span class="transition-transform group-open/nested-1:rotate-90">
+          <IoIosArrowForward />
+        </span>
+      </summary>
+
+      <div class="border-t p-4">
+        <Paragraf> Junior Software Engineer with a strong focus... </Paragraf>
+      </div>
+    </details>
+
+    <details class="group rounded-lg border">
+      <summary class="flex cursor-pointer items-center justify-between p-4">
+        <span>Nested 2</span>
+        <span class="transition-transform group-open:rotate-90">
+          <IoIosArrowForward />
+        </span>
+      </summary>
+
+      <div class="border-t p-4">
+        <Paragraf> Junior Software Engineer with a strong focus... </Paragraf>
+      </div>
+    </details>
+  </details>
+  <!-- end nested -->
 </BaseLayout>

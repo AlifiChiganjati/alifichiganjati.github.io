@@ -1,0 +1,47 @@
+---
+import AccordionItem from "./AccordionItem.astro";
+
+interface Node {
+  id: string;
+  title: string;
+  content?: string;
+  children?: Node[];
+}
+
+interface Props {
+  items: Node[];
+}
+
+const { items = [] } = Astro.props;
+---
+
+<div class="accordion-group space-y-2">
+  {items.map((item) => <AccordionItem node={item} />)}
+</div>
+
+<script>
+  document.addEventListener("click", (e) => {
+    const target = e.target as HTMLElement | null;
+    if (!target) return;
+
+    const button = target.closest(
+      "[data-accordion-trigger]",
+    ) as HTMLElement | null;
+    if (!button) return;
+
+    const group = button.closest(".accordion-group") as HTMLElement | null;
+    if (!group) return;
+
+    const contents = group.querySelectorAll<HTMLElement>(
+      "[data-accordion-content]",
+    );
+
+    contents.forEach((c) => {
+      if (c !== button.nextElementSibling) {
+        c.classList.add("hidden");
+      }
+    });
+
+    button.nextElementSibling?.classList.toggle("hidden");
+  });
+</script>

@@ -7,8 +7,10 @@ const NavbarMenu = () => {
     setPathname(window.location.pathname);
   }, []);
 
-  const isActive = (href: string) => href === pathname;
+  const normalize = (path: string) => path.replace(/\/$/, "");
 
+  const isActive = (href: string) =>
+    normalize(pathname).endsWith(normalize(href));
   const menus = [
     // { name: "Home", href: "/" },
     { name: "About", href: "/about" },

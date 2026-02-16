@@ -29,16 +29,16 @@
 
 ---
 
-- [ ] AboutPage:
-  - [ ] Bio
-  - [ ] Skill set
-  - [ ] Experience timeline
+- [x] AboutPage:
+  - [x] Bio
+  - [x] Skill set
+  - [x] Experience timeline
 
 ---
 
-- [ ] ProjectsPage:
-  - [ ] List Projects
-  - [ ] Detail Project
+- [x] ProjectsPage:
+  - [x] List Projects
+  - [x] Skeleton Project
 
 ---
 

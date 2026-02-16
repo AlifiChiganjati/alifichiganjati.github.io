@@ -26,19 +26,17 @@ import {
 <BaseLayout title="Home" description="Short Intro">
   <section class="mx-auto max-w-3xl space-y-4 py-4">
     <!-- start about me -->
-    <details
+    <div
       class="group rounded-xl border border-(--border-default) bg-(--bg-surface) shadow-sm transition hover:shadow-md"
     >
-      <summary
-        class="flex cursor-pointer items-center justify-between px-6 py-4"
-      >
+      <div class="flex cursor-pointer items-center justify-between px-6 py-4">
         <Title title="about me" as="h2" />
         <span
           class="text-(--text-secondary) transition-transform duration-300 group-open:rotate-90"
         >
-          <IoIosArrowForward />
+          <!-- <IoIosArrowForward /> -->
         </span>
-      </summary>
+      </div>
 
       <div
         class="border-t border-(--border-default) px-6 py-4 text-(--text-secondary)"
@@ -51,23 +49,21 @@ import {
           technical solutions and value clean, maintainable architecture.
         </Paragraf>
       </div>
-    </details>
+    </div>
     <!-- end about me -->
 
     <!-- start EXPERIENCE -->
-    <details
+    <div
       class="group rounded-xl border border-(--border-default) bg-(--bg-surface) shadow-sm transition hover:shadow-md"
     >
-      <summary
-        class="flex cursor-pointer items-center justify-between px-6 py-4"
-      >
+      <div class="flex cursor-pointer items-center justify-between px-6 py-4">
         <Title title="my experience" as="h2" />
         <span
           class="text-(--text-secondary) transition-transform duration-300 group-open:rotate-90"
         >
-          <IoIosArrowForward />
+          <!-- <IoIosArrowForward /> -->
         </span>
-      </summary>
+      </div>
 
       <div class="space-y-3 border-t border-(--border-default) px-4 py-4">
         <!-- start NUSA -->
@@ -143,21 +139,19 @@ import {
         </details>
         <!-- end kamar pelajar -->
       </div>
-    </details>
+    </div>
     <!-- start my skill -->
-    <details
+    <div
       class="group rounded-xl border border-(--border-default) bg-(--bg-surface) shadow-sm transition hover:shadow-md"
     >
-      <summary
-        class="flex cursor-pointer items-center justify-between px-6 py-4"
-      >
+      <div class="flex cursor-pointer items-center justify-between px-6 py-4">
         <Title title="my skill" as="h2" />
         <span
           class="text-(--text-secondary) transition-transform duration-300 group-open:rotate-90"
         >
           <IoIosArrowForward />
         </span>
-      </summary>
+      </div>
 
       <div class="space-y-8 border-t border-(--border-default) px-6 py-6">
         <!-- Core Engineering -->
@@ -249,7 +243,7 @@ import {
           </div>
         </div>
       </div>
-    </details>
+    </div>
 
     <!-- end my skill -->
   </section>

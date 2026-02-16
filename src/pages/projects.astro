@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SkeletonCard from "../components/organisms/SkeletonCard.astro";
+import ProjectCard from "../components/organisms/ProjectCard.astro";
+---
+
+<BaseLayout title="projects" description="This All Best my Projects">
+  <section class="flex flex-col gap-8">
+    <h2
+      class="text-lg font-semibold capitalize md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl"
+    >
+      Projects
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div class="flex items-center justify-center">
+        <SkeletonCard />
+        <ProjectCard />
+      </div>
+      <div class="flex items-center justify-center">
+        <SkeletonCard />
+        <ProjectCard />
+      </div>
+      <div class="flex items-center justify-center">
+        <SkeletonCard />
+        <ProjectCard />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script is:inline>
+  const skeletons = document.querySelectorAll(".skeletons");
+  const projects = document.querySelectorAll(".projects");
+
+  setTimeout(() => {
+    skeletons.forEach((el) => el.classList.add("hidden"));
+    projects.forEach((el) => el.classList.remove("hidden"));
+  }, 700);
+</script>

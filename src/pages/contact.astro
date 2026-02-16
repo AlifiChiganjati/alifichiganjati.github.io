@@ -1,11 +1,43 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 ---
 
 <BaseLayout title="Contact" description="Contact Page">
-  <section class="mt-4 flex flex-col gap-4">
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
-      <div class="">test</div>
+  <section class="mx-auto mt-10 max-w-5xl px-4">
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
+      <div class="flex flex-col justify-center">
+        <h2 class="text-2xl font-bold">Let’s Connect</h2>
+
+        <p class="mt-4 text-base leading-relaxed text-(--text-secondary)">
+          I’m always interested in discussing system design, backend
+          architecture, or impactful software projects. If you think we can
+          build something better, let’s connect.
+        </p>
+        <div class="mt-6 grid grid-cols-3 sm:max-w-md">
+          <a
+            href="https://github.com/AlifiChiganjati"
+            class="flex items-center justify-center transition hover:scale-110"
+            target="_blank"
+          >
+            <FaGithub className="mx-2 text-4xl" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/alifi-chiganjati"
+            class="flex items-center justify-center transition hover:scale-110"
+            target="_blank"
+          >
+            <FaLinkedin className="mx-2 text-4xl" />
+          </a>
+          <a
+            href="https://www.instagram.com/alifi_chiganjati"
+            class="flex items-center justify-center transition hover:scale-110"
+            target="_blank"
+          >
+            <FaInstagram className="mx-2 text-4xl" />
+          </a>
+        </div>
+      </div>
 
       <div class="">
         <form class="flex flex-col items-center gap-4">

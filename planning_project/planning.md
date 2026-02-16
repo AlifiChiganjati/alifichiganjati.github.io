@@ -42,9 +42,9 @@
 
 ---
 
-- [ ] ContactPage:
-  - [ ] List Highlight Projects
-  - [ ] Detail Project
+- [x] ContactPage:
+  - [x] List Highlight Projects
+  - [x] Sosmed
 
 ---
 

@@ -1,0 +1,61 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Contact" description="Contact Page">
+  <section class="mt-4 flex flex-col gap-4">
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr]">
+      <div class="">test</div>
+
+      <div class="">
+        <form class="flex flex-col items-center gap-4">
+          <div class="flex w-full flex-col gap-2">
+            <label for="name" class="text-base font-bold capitalize">
+              nama
+            </label>
+            <input
+              id="name"
+              type="text"
+              placeholder="Joe Doe"
+              class="text-dark w-full rounded-md border-2 border-(--border-strong) bg-(--bg-surface-muted) p-3 focus:border-(--border-strong) focus:ring-1 focus:ring-(--border-strong) focus:outline-none"
+            />
+          </div>
+          <div class="flex w-full flex-col gap-2">
+            <label
+              for="email"
+              class="text-primary dark:text-dark-light text-base font-bold capitalize"
+            >
+              email
+            </label>
+            <input
+              id="email"
+              type="email"
+              placeholder="example@email"
+              class="text-dark w-full rounded-md border-2 border-(--border-strong) bg-(--bg-surface-muted) p-3 focus:border-(--border-strong) focus:ring-1 focus:ring-(--border-strong) focus:outline-none"
+            />
+          </div>
+          <div class="flex w-full flex-col gap-2">
+            <label for="pesan" class="text-base font-bold capitalize">
+              Pesan
+            </label>
+            <textarea
+              name="pesan"
+              id="pesan"
+              cols="30"
+              rows="10"
+              placeholder="Input Your Message Here..."
+              class="text-dark w-full rounded-md border-2 border-(--border-strong) bg-(--bg-surface-muted) p-3 focus:border-(--border-strong) focus:ring-1 focus:ring-(--border-strong) focus:outline-none"
+            ></textarea>
+          </div>
+          <div class="flex w-full items-center justify-center">
+            <button
+              class="w-full rounded-full bg-(--border-default) px-8 py-3 text-base font-semibold shadow transition duration-500 hover:bg-(--border-strong) hover:shadow-lg"
+            >
+              Kirim
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

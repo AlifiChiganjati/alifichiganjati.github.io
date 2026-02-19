@@ -92,4 +92,8 @@
   .skill-card {
     @apply flex items-center justify-center text-center text-2xl md:text-4xl lg:text-5xl;
   }
+
+  .skill-badge {
+    @apply mr-2 mb-2 inline-block rounded-full bg-(--accent-soft) px-3 py-1 text-sm font-semibold capitalize;
+  }
 }

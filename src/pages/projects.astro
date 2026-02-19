@@ -7,28 +7,70 @@ import ProjectCard from "../components/organisms/ProjectCard.astro";
 <BaseLayout title="projects" description="This All Best my Projects">
   <section class="mt-4 flex flex-col px-2 py-1">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <!-- start simple merhcant -->
       <div class="flex items-center justify-center">
         <SkeletonCard />
-        <ProjectCard />
+        <ProjectCard
+          href="https://github.com/AlifiChiganjati/simple-merchant-apps/"
+        >
+          <img
+            class="aspect-video w-full rounded-lg object-cover"
+            src="https://placehold.co/400"
+            alt="Image Project"
+            slot="image-project"
+          />
+          <div slot="content-project">
+            <div class="mb-2 text-xl font-bold">Simple Merchant Apps</div>
+            <p class="text-justify text-base">
+              Apps for managent your bisnis simple and fast.
+            </p>
+          </div>
+
+          <div class="mt-2" slot="skill-project">
+            <span class="skill-badge">#BE</span>
+            <span class="skill-badge">#NodeJs</span>
+            <span class="skill-badge">#Express</span>
+            <span class="skill-badge">#clean arcithecture</span>
+          </div>
+        </ProjectCard>
       </div>
+      <!-- end simple merchant -->
+      <!-- start ui simple merchant -->
       <div class="flex items-center justify-center">
         <SkeletonCard />
-        <ProjectCard />
+        <ProjectCard
+          href="https://github.com/AlifiChiganjati/simple-merchant-apps/"
+        >
+          <img
+            class="aspect-video w-full rounded-lg object-cover"
+            src="https://placehold.co/400"
+            alt="Image Project"
+            slot="image-project"
+          />
+          <div slot="content-project">
+            <div class="mb-2 text-xl font-bold">Simple Merchant Apps</div>
+            <p class="text-justify text-base">UI for simple merchant apps.</p>
+          </div>
+
+          <div class="mt-2" slot="skill-project">
+            <span class="skill-badge">#FE</span>
+            <span class="skill-badge">#React</span>
+            <span class="skill-badge">#Tailwindcss</span>
+          </div>
+        </ProjectCard>
       </div>
-      <div class="flex items-center justify-center">
-        <SkeletonCard />
-        <ProjectCard />
-      </div>
+      <!-- end simple merchant -->
     </div>
   </section>
+
+  <script is:inline>
+    const skeletons = document.querySelectorAll(".skeletons");
+    const projects = document.querySelectorAll(".projects");
+
+    setTimeout(() => {
+      skeletons.forEach((el) => el.classList.add("hidden"));
+      projects.forEach((el) => el.classList.remove("hidden"));
+      projects.forEach((el) => el.classList.add("flex"));
+    }, 500);
+  </script>
 </BaseLayout>
-
-<script is:inline>
-  const skeletons = document.querySelectorAll(".skeletons");
-  const projects = document.querySelectorAll(".projects");
-
-  setTimeout(() => {
-    skeletons.forEach((el) => el.classList.add("hidden"));
-    projects.forEach((el) => el.classList.remove("hidden"));
-  }, 700);
-</script>

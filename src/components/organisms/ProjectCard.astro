@@ -1,33 +1,24 @@
-<div
-  class="projects hidden max-w-sm overflow-hidden rounded-lg border p-4 shadow-lg xl:max-w-md"
+---
+interface Props {
+  href?: string;
+  target?: string;
+}
+const { href: hrefName = "#", target: targetName = "_blank" } = Astro.props;
+---
+
+<a
+  href={hrefName}
+  target={targetName}
+  class="projects hidden min-h-120 max-w-sm flex-col overflow-hidden rounded-lg border p-4 shadow-lg xl:max-w-md"
 >
-  <img
-    class="aspect-video w-full rounded-lg object-cover"
-    src="https://placehold.co/400"
-    alt="Image Project"
-  />
+  <slot name="image-project" />
   <div class="my-2 h-0.5 w-full bg-(--accent)"></div>
 
-  <div class="space-y-4">
-    <div class="mb-2 text-xl font-bold">The Coldest Sunset</div>
-    <p class="text-justify text-base">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-      quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
-      nihil.
-    </p>
+  <div class="flex flex-1 flex-col space-y-4">
+    <slot name="content-project" />
+
+    <div class="mt-auto">
+      <slot name="skill-project" />
+    </div>
   </div>
-  <div class="mt-2">
-    <span
-      class="mr-2 mb-2 inline-block rounded-full bg-(--accent-soft) px-3 py-1 text-sm font-semibold"
-      >#photography</span
-    >
-    <span
-      class="mr-2 mb-2 inline-block rounded-full bg-(--accent-soft) px-3 py-1 text-sm font-semibold"
-      >#travel</span
-    >
-    <span
-      class="mr-2 mb-2 inline-block rounded-full bg-(--accent-soft) px-3 py-1 text-sm font-semibold"
-      >#winter</span
-    >
-  </div>
-</div>
+</a>
